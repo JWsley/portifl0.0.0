@@ -1,0 +1,36 @@
+
+@keyframes floated-img {
+    0% {
+
+        transform:translate(0,10px) scale(1.05);
+
+    }
+
+    100% {
+        transform:translate(0,-10px) scale(1.00);
+    }
+
+
+}
+
+
+@keyframes open-content{
+    0%{
+        scale: (1.15);
+    }
+
+}
+
+
+
+@keyframes floated-item {
+    0% {
+
+        transform:translate(0,5px) ;
+
+    }
+
+    100% {
+        transform:translate(0,-5px) ;
+    }
+}
