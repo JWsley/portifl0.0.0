@@ -266,3 +266,16 @@ margin-right: 5px;
 
 }
 
+
+article{
+    cursor: default;
+}
+
+.zoom-icon{
+   
+    transition-duration: 500ms;
+}
+
+.zoom-icon:hover{
+    transform: scale(1.10);
+}
