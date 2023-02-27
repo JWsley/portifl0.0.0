@@ -5,6 +5,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'Overpass', sans-serif;
+    
    
 }
 
@@ -20,21 +21,24 @@ header{
     height: 100%;
     width: 100%;
     min-height: 1050px;
-    border-bottom: 15px solid #0B0C1C;
+ 
     padding: 10px;
     animation: fadeInLeft;
     animation-duration: 3s;
+    
    
+
     
     
 }
 
 
 body{
+   
     height: 90%;
     width: 100%;
     background: url("../assets/background/backg.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     padding: 15px;
     padding-left: 20px;
@@ -42,8 +46,19 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
    
 }
-   
-    
+
+
+.cursor{
+    position: absolute;
+   z-index: -1;
+    height: 120px;
+    width: 120px;
+    filter: blur(10px) brightness(200%);
+    background: linear-gradient(90deg,#292D69,#1e245f);
+    opacity: 50%;
+    border-radius: 100%;
+
+}    
 
 .name{
     margin-top: 20%;
@@ -51,7 +66,19 @@ body{
     font-family: 'Bebas Neue', cursive;
     animation: floated-item 2s alternate infinite;
     cursor:default;
+    filter: drop-shadow(0px 0px black);
+    
 }
+
+
+
+
+
+
+
+
+
+
 
 .subtitulo{
     margin-left: 150%;
@@ -74,13 +101,13 @@ body{
     box-shadow: 1px 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin-top: 4%;
     animation: floated-img 2s alternate infinite;
-    cursor: pointer;
+    cursor: default;
+    
    
 }
 
 .avatar:hover{
-    animation: bounce;
-    animation-duration:  2s;
+    animation: floated-img-nogray 2s infinite alternate;
     transition-duration: 1s;
 }
 
@@ -128,6 +155,7 @@ body{
    background-color:#292D69;
    padding-bottom: 0px;
    margin-top: 20px;
+   
 }
 
 
@@ -150,6 +178,7 @@ body{
 
 
 .container{
+
     display: flex;
     flex-direction: column;
     max-width: 500px;
@@ -170,7 +199,14 @@ body{
 .text{
     min-width: 60%;
     max-width: 60%;
-    font-size: 35px;
+    font-size: 30px;
+}
+.end{
+    margin-top: 15px;
+}
+
+.habil{
+    margin-top: 30px;
 }
 
 .skills{
@@ -180,6 +216,82 @@ body{
     max-width: 30%;
     height:20vh;
     max-height: 15px;
+}
+.skillContainer{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+   
+   
+    background-attachment: fixed;
+    margin-top: 15px;
+    height: 400px;
+    width: auto;
+    border: 2px solid white;
+    background-color: black;
+}
+
+.skilltext{
+    margin-top: 15px;
+    margin-left: 55px;
+    width: 80%;
+   
+}
+
+.skilltext1{
+    margin-top: 30px;
+    margin-left: 55px;
+    width: 80%;
+    
+}
+
+.text{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+.text1{
+    margin-top: 50px;
+    text-align: left;
+}
+
+.txt2{
+    margin-top: 15px;
+}
+.iconscode{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+    height: 100px;
+
+    
+}
+.iconcode{
+    cursor: pointer;
+    transition: 1s;
+    filter: invert();
+    height: 100px;
+    width: 100px;
+}.iconcode:hover{
+    transition: 1s;
+    transform: scale(1.2);
+   
+
+}
+
+
+.ionicon{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    filter: invert();
+    height: 40px;
+    width: 40px;;
 }
 
 
@@ -197,6 +309,9 @@ article h2{
     font-family: 'Bebas Neue', cursive;
 }
 
+p{
+    font-family: 'Fjalla One', sans-serif;
+}
 
 footer{
     max-width: 100%;

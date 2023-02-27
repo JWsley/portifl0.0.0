@@ -3,15 +3,34 @@
     0% {
 
         transform:translate(0,10px) scale(1.05);
+        
 
     }
 
     100% {
         transform:translate(0,-10px) scale(1.00);
+        filter: grayscale();
     }
 
 
 }
+
+@keyframes floated-img-nogray {
+    0% {
+
+        transform:translate(0,10px) scale(1.05);
+        
+
+    }
+
+    100% {
+        transform:translate(0,-10px) scale(1.00);
+       
+    }
+
+
+}
+
 
 
 @keyframes open-content{
@@ -33,4 +52,100 @@
     100% {
         transform:translate(0,-5px) ;
     }
+}
+
+#subtitulo:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+#text1:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+#text2:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+
+#text3:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+
+#text4:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+
+#text5:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+
+#text6:after{
+    content: "" ;
+    border-left: 6px solid white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 5px;
+    opacity: 1;
+    transition: 1s;
+    animation:  pisca 1s infinite alternate;
+}
+
+
+
+@keyframes pisca {
+
+    0%,100%{opacity:1;}
+    50%{opacity: 0;}
+    
+    
+}
+
+#c1,#c2,#c3,#c4,#c5,#c6{
+    opacity: 0;
+    transition: 2s;
+    
+
+}
+
+
+@keyframes revealicon {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
