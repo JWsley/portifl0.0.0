@@ -26,7 +26,7 @@
                   <div class="subtitulo">
 
                    
-                      <h1 id="subtitulo">DEV APRENDIZ.</h1>
+                      <h1 id="subtitulo"></h1>
                       
                   
                   </div>
@@ -65,7 +65,7 @@
           </div>
       </div>
   </header>
-  <body data-aos="fade-up" id="body" class="animate__animated animate__fadeInLeft">
+  <body onload="startype()" data-aos="fade-up" id="body" class="animate__animated animate__fadeInLeft">
 
       <main>
           <section data-aos="fade-up"   class="sect1">
@@ -77,9 +77,9 @@
                           <hr>
                           <h2 data-aos="fade-up" class="habil">Habilidades</h2>
                           <p data-aos="fade-up">Atualmente, tenho me aprofundado em desenvolvimento web. Estou muito animado com as possibilidades que essa linguagem oferece e pretendo usá-la em meus futuros projetos.</p> 
-                          <div class="skillContainer" data-aos="zoom-in" id="skillcont">
+                          <div class="skillContainer"  data-aos="zoom-in" id="skillcont">
                                 <div class="skilltext1">
-                                  <p class="txt txt1" id="text1">Além disso, já tive experiências com uma variedade de linguagens:</p>
+                                  <p class="txt txt1" id="txt1"></p>
                                 </div>
                                 <div class="iconscode">
                                     <img id="c1" src="./src/assets/icons/htmlicon.png" alt="HTML" class="iconcode ">
@@ -91,10 +91,11 @@
 
                                 </div>
                                 <div class="skilltext">
-                                  <p class="txt txt2" id="text2">Também tenho conhecimento básico em desenvolvimento mobile utilizando ionic framework.</p>
+                                  <p class="txt txt2" id="txt2"></p>
                                 </div>
+                                <hr id="hr">
                                 <div class="skilltext">
-                                  <p class="txt txt3" id="text3">Estou sempre em busca de novos desafios e de me atualizar sobre as tendências do mercado. Acredito que essa é uma área em constante evolução e é fundamental estar sempre atualizado para se destacar profissionalmente.</p>
+                                  <p class="txt txt3" id="txt3">Estou sempre em busca de novos desafios e de me atualizar sobre as tendências do mercado. Acredito que essa é uma área em constante evolução e é fundamental estar sempre atualizado para se destacar profissionalmente.</p>
                                 </div>
                                 <img src="./src/assets/icons/ionicon.png" alt="IonicSoin" class="ionicon" id="ion">
                               </div>
@@ -150,6 +151,7 @@
   
   
     </footer>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="./src/js/typeAnimation.js"></script>
     <script src="./src/js/cursor.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

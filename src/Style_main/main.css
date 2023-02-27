@@ -81,8 +81,10 @@ body{
 
 
 .subtitulo{
+    display: flex;
+    flex-direction: row;
     margin-left: 150%;
-    font-size: 90px;
+    font-size: 85px;
     font-family: 'Bebas Neue', cursive;
     animation: floated-item 2s alternate infinite;
     cursor: default;
@@ -107,7 +109,7 @@ body{
 }
 
 .avatar:hover{
-    animation: floated-img-nogray 2s infinite alternate;
+    
     transition-duration: 1s;
 }
 
@@ -255,11 +257,21 @@ body{
 .text1{
     margin-top: 50px;
     text-align: left;
+    display: block;
 }
 
 .txt2{
-    margin-top: 15px;
+
+    margin-top: 15px;}
+
+
+#hr{
+    opacity: 0;
+    transition: 1;
+
 }
+
+
 .iconscode{
     display: flex;
     flex-direction: row;

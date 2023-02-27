@@ -54,15 +54,7 @@
     }
 }
 
-#subtitulo:after{
-    content: "" ;
-    border-left: 6px solid white ;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 5px;
-    opacity: 1;
-    transition: 1s;
-    animation:  pisca 1s infinite alternate;
-}
+
 #text1:after{
     content: "" ;
     border-left: 6px solid white ;
